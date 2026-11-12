@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deploy check</title>
+<style>
+  :root { --bg:#f6f4ef; --ink:#1d1c1a; --muted:#6a665e; --line:#d9d4c8; --ok:#1f6f4a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16171a; --ink:#ecebe7; --muted:#a09d95; --line:#33353a; --ok:#6fd3a2; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.55 Georgia, 'Times New Roman', serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 12vh 20px 8vh; }
+  h1 { font-size: clamp(2rem, 7vw, 3.4rem); line-height:1.05; margin:0 0 .4em; letter-spacing:-.01em; }
+  p { margin: 0 0 1em; }
+  .stamp { font: 600 .85rem/1 ui-monospace, Menlo, monospace; color:var(--ok); border:1px solid var(--line); border-radius:4px; display:inline-block; padding:.55em .7em; margin-bottom:2rem; }
+  dl { border-top:1px solid var(--line); margin:2rem 0 0; }
+  dl div { display:flex; gap:1rem; justify-content:space-between; border-bottom:1px solid var(--line); padding:.7rem 0; flex-wrap:wrap; }
+  dt { color:var(--muted); } dd { margin:0; font-family: ui-monospace, Menlo, monospace; font-size:.9rem; }
+  @media (max-width: 480px) { main { padding-top: 8vh; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="stamp" id="version">deploy-check v1</div>
+  <h1>This page is live.</h1>
+  <p>A placeholder published to GitHub Pages to prove a set of deploy steps: build, publish, check the live link at phone and desktop size, update, and roll back.</p>
+  <p>It holds no data and collects nothing.</p>
+  <dl>
+    <div><dt>Published from</dt><dd>main branch, / (root)</dd></div>
+    <div><dt>Version on this page</dt><dd>v1</dd></div>
+    <div><dt>How to update</dt><dd>see README.md in the repo</dd></div>
+  </dl>
+</main>
+</body>
+</html>
